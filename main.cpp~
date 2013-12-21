@@ -1,0 +1,25 @@
+//	This quick little program proves my ability to complete the FizzBuzz test.
+
+//	Rules: print out every number from 1 to 100 EXCEPT:
+//		For numbers divisible by 3, print out 'Fizz...'
+//		For numbers divisible by 5, print out 'Buzz...'
+//		For numbers divisible by 3 *and* 5, print out 'FIZZBUZZ!'
+
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+
+using namespace std;
+
+int main() {
+	cout << endl;
+	for( unsigned i = 1; i < 101; i++ ) {
+		if( i % 3 == 0 ) cout << "Fizz...";
+		if( i % 5 == 0 ) cout << "Buzz...";
+		if( i%3 != 0 && i%5 != 0 ) cout << i;
+		cout << endl;
+	}
+	
+	cout << "Done!\n\n";
+	return 0;
+}
